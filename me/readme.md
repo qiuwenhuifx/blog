@@ -4,6 +4,8 @@
 ![pic](digoal.png)      
         
 - 中国开源软件推进联盟PostgreSQL分会，特聘资深领域专家。       
+- PGCONF china，PG认证组主委。       
+- PGCONF china，2019届行业杰出贡献奖获得者。       
 - PostgreSQL 中国社区发起人之一、常委、兼任社区大学校长。负责PostgreSQL数据库在中国的技术落地与推广、人才培养。        
 - PostgreSQL 中国社区杭州历届分会会长之一。      
 - [中国信息通信研究院主办、中国通信标准化协会支持的"OSCAR云计算开源产业大会"评选：2018届OSCAR开源尖峰人物之一](../201803/20180322_12.md)  
@@ -13,7 +15,7 @@
 - DBGeeK联盟 专家团成员。      
 - 30项数据库专利。（截至2018-01）      
       
-现任职于阿里云数据库团队，主要负责阿里云PostgreSQL系列产品线（[RDS PG](https://www.aliyun.com/product/rds/postgresql) ， [PPAS（兼容Oracle）](https://www.aliyun.com/product/rds/ppas) ， [POLARDB for PG， POLARDB for Oracle(公测中)](https://www.aliyun.com/product/polardb)）的产品设计、推广、应用落地与生态构建。 欢迎使用[ADAM+POLARDB for Oracle（平滑去O）](https://www.aliyun.com/product/adam)）。  
+现任职于阿里云数据库团队，负责阿里云PostgreSQL系列产品线（[RDS PG](https://www.aliyun.com/product/rds/postgresql) ，曾负责的产品包括（HybridDB for PostgreSQL(分布式版PG的架构设计，现已更名为ADB for PG)，[PPAS（兼容Oracle）](https://www.aliyun.com/product/rds/ppas) ， [POLARDB for PG， POLARDB for Oracle(已商用)](https://www.aliyun.com/product/polardb)）的产品设计、推广、应用落地与生态构建。 欢迎使用[ADAM+RDS PG 或 POLARDB for Oracle（平滑去O）](https://www.aliyun.com/product/adam)）。  
   
 为阿里巴巴内部、专有云、公有云等客户提供架构、方案设计、优化、POC、用户与行业需求挖掘与提炼、行业方案沉淀与推广支持。为产品的前线销售、架构师、后端研发团队提供支持。   
   

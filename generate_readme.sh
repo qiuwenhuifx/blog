@@ -20,17 +20,16 @@ echo "1\.3、PostgreSQL 9.1 数据库管理与开发 视频1天  " >> ./README.m
 echo "1\.4、PostgreSQL 9.3 数据库优化 视频3天  " >> ./README.md
 echo "1\.5、PostgreSQL 专题讲座 视频  " >> ./README.md
 echo "  "  >> ./README.md
-echo "2、[《PostgreSQL 多应用场景实践 - 含视频》](201805/20180524_02.md)  " >> ./README.md 
-echo "3、[《PostgreSQL 11 2天体系化培训(包含Oracle迁移到PG的知识点) - 含视频》](201901/20190105_01.md)  " >> ./README.md 
-echo "4、[《阿里巴巴 PostgreSQL、社区生态；PG开发者指南、原理、案例、管理优化实践《学习资料、视频》；《PG天天象上》沙龙纪录》](201801/20180121_01.md)  " >> ./README.md 
-echo "5、[《《PG干O,仁心所象 - 去O实战培训》 公益活动纪录 - 《PG开发者指南、去O、管理与优化实践》》](201906/20190615_03.md)    " >> ./README.md 
-echo "6、PG天天象上活动视频:  "   >> ./README.md
-echo "https://edu.aliyun.com/course/836/lesson/list  "  >> ./README.md
-echo "https://yq.aliyun.com/live/582  "  >> ./README.md   
+echo "2、[《2019-PostgreSQL 11 , 2天体系化培训 - 视频每周更新》](201901/20190105_01.md)  " >> ./README.md 
+echo "3、[《2017-PostgreSQL 应用场景实践 - 含视频》](201805/20180524_02.md)  " >> ./README.md 
+echo "4、[《2019-PG天天象上沙龙纪录- 含视频》](201801/20180121_01.md)  " >> ./README.md 
+echo "5、[《2019-Oracle迁移到PostgreSQL - 实战培训》](201906/20190615_03.md)    " >> ./README.md 
+echo "6、[《2018-PG生态、案例、开发实践系列 - 培训视频》](https://edu.aliyun.com/course/836/lesson/list)  "  >> ./README.md
+echo "7、[《2018-阿里云POLARDB for Oracle|RDS for PPAS 讲解视频》](https://yq.aliyun.com/live/582)  "  >> ./README.md   
 echo "  "  >> ./README.md
 echo "### 二、学习资料  " >> ./README.md
 echo "  "  >> ./README.md
-echo "1、[《Oracle DBA 增值 PostgreSQL 学习路径》](201804/20180425_01.md)   " >> ./README.md 
+echo "1、[《Oracle DBA 增值 转型 PostgreSQL 学习方法、路径》](201804/20180425_01.md)   " >> ./README.md 
 echo "2、[《PostgreSQL、Greenplum 《如来神掌》》](201706/20170601_02.md)    " >> ./README.md
 echo "3、[《快速入门PostgreSQL应用开发与管理 - 1 如何搭建一套学习、开发PostgreSQL的环境》](201704/20170411_01.md)    " >> ./README.md
 echo "4、[《快速入门PostgreSQL应用开发与管理 - 2 Linux基本操作》](201704/20170411_02.md)    " >> ./README.md
@@ -41,9 +40,13 @@ echo "8、[《快速入门PostgreSQL应用开发与管理 - 6 事务和锁》](2
 echo "9、[《快速入门PostgreSQL应用开发与管理 - 7 函数、存储过程和触发器》](201704/20170412_02.md)    " >> ./README.md
 echo "10、[《快速入门PostgreSQL应用开发与管理 - 8 PostgreSQL 管理》](201704/20170412_04.md)    " >> ./README.md
 echo "  "  >> ./README.md
-echo "PG官方微信 | PG官方微博 | PG技术进阶钉钉群 | 个人微信  " >> ./README.md
+echo "PG官方微信 | PG官方微博 | PG技术进阶钉钉群</br>每周直播 | digoal </br>个人微信  " >> ./README.md
 echo "---|---|---|---  " >> ./README.md
 echo "![pic](./pic/pg_weixin.jpg) | ![pic](./pic/pg_weibo.jpg) | ![pic](./pic/dingding_pg_chat.png) | ![pic](./pic/digoal_weixin.jpg)  " >> ./README.md
+echo "  "  >> ./README.md
+echo "PG社区认证 | PG社区认证</br>联系人微信 " >> ./README.md
+echo "---|---  " >> ./README.md
+echo "![pic](./pic/pgcert.jpg) | ![pic](./pic/huhui.jpg)  " >> ./README.md
 echo "  "  >> ./README.md
 echo "如有错误, 万望指正, 非常感谢.  "  >> ./README.md
 echo "  "  >> ./README.md
@@ -66,27 +69,46 @@ do
     title=`head -n 1 $file|awk -F "##" '{print $2}'|sed 's/^[ ]*//; s/[ ]*$//'`
     echo "##### $file   [《$title》]($file)  " >> ./readme.md
     echo "##### $dir/$file   [《$title》]($dir/$file)  " >> ../README.md
-    FLAG=`grep "flagcounter" $file|grep -c "href"`
-    if [ $FLAG -ne 1 ]; then
-      echo "  " >> ./$file
-      echo "<a rel=\"nofollow\" href=\"http://info.flagcounter.com/h9V1\"  ><img src=\"http://s03.flagcounter.com/count/h9V1/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/\"  alt=\"Flag Counter\"  border=\"0\"  ></a>  " >> ./$file
-      echo "  " >> ./$file
-    fi
-# #######################    sed -i '/Count].http:\/\/info.flagcounter.com\/h9V1/d' $file
-    LINK=`grep "22709685feb7cab07d30f30387f0a9ae" $file|grep -c "22709685feb7cab07d30f30387f0a9ae"`
-    if [ $LINK -ne 1 ]; then
-      echo "  " >> ./$file
-      echo "## [digoal's 大量PostgreSQL文章入口](https://github.com/digoal/blog/blob/master/README.md \"22709685feb7cab07d30f30387f0a9ae\")" >> ./$file
-      echo "  " >> ./$file
-    fi
-# #######################    sed -i '/22709685feb7cab07d30f30387f0a9ae/d' $file
+# ######################  go go go
     FREEURL=`grep "57258f76c37864c6e6d23383d05714ea" $file|grep -c "57258f76c37864c6e6d23383d05714ea"`
     if [ $FREEURL -ne 1 ]; then
       echo "  " >> ./$file
-      echo "## [免费领取阿里云RDS PostgreSQL实例、ECS虚拟机](https://free.aliyun.com/ \"57258f76c37864c6e6d23383d05714ea\")" >> ./$file
+      echo "#### [免费领取阿里云RDS PostgreSQL实例、ECS虚拟机](https://free.aliyun.com/ \"57258f76c37864c6e6d23383d05714ea\")" >> ./$file
       echo "  " >> ./$file
     fi
-# #######################    sed -i '/57258f76c37864c6e6d23383d05714ea/d' $file
+# ######   sed -i '/57258f76c37864c6e6d23383d05714ea/d' $file
+    LINK=`grep "22709685feb7cab07d30f30387f0a9ae" $file|grep -c "22709685feb7cab07d30f30387f0a9ae"`
+    if [ $LINK -ne 1 ]; then
+      echo "  " >> ./$file
+      echo "#### [digoal's PostgreSQL文章入口](https://github.com/digoal/blog/blob/master/README.md \"22709685feb7cab07d30f30387f0a9ae\")" >> ./$file
+      echo "  " >> ./$file
+    fi
+# ######   sed -i '/22709685feb7cab07d30f30387f0a9ae/d' $file
+    WXLINK=`grep "f7ad92eeba24523fd47a6e1a0e691b59" $file|grep -c "f7ad92eeba24523fd47a6e1a0e691b59"`
+    if [ $WXLINK -ne 1 ]; then
+      echo "  " >> ./$file
+      echo "![digoal's weixin](../pic/digoal_weixin.jpg \"f7ad92eeba24523fd47a6e1a0e691b59\")" >> ./$file
+      echo "  " >> ./$file
+    fi
+# ######   sed -i '/f7ad92eeba24523fd47a6e1a0e691b59/d' $file
+#
+#    DSLINK=`grep "acd5cce1a143ef1d6931b1956457bc9f" $file|grep -c "acd5cce1a143ef1d6931b1956457bc9f"`
+#    if [ $DSLINK -ne 1 ]; then
+#      echo "  " >> ./$file
+#      echo "#### 打赏都逃不过老婆的五指山 －_－b  " >> ./$file
+#      echo "![wife's weixin ds](../pic/wife_weixin_ds.jpg \"acd5cce1a143ef1d6931b1956457bc9f\")" >> ./$file
+#      echo "  " >> ./$file
+#    fi
+# ######  sed -i '/打赏都逃不过老婆的五指山/d' $file
+# ######  sed -i '/acd5cce1a143ef1d6931b1956457bc9f/d' $file
+#
+#    FLAG=`grep "flagcounter" $file|grep -c "href"`
+#    if [ $FLAG -ne 1 ]; then
+#      echo "  " >> ./$file
+#      echo "<a rel=\"nofollow\" href=\"http://info.flagcounter.com/h9V1\"  ><img src=\"http://s03.flagcounter.com/count/h9V1/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/\"  alt=\"Flag Counter\"  border=\"0\"  ></a>  " >> ./$file
+#      echo "  " >> ./$file
+#    fi
+# ######   sed -i '/href=\"http:\/\/info.flagcounter.com\/h9V1/d' $file
   done
   cd ..
 done
