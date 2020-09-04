@@ -49,6 +49,7 @@
 7、[《[未完待续] PostgreSQL\Greenplum Customer视角TODO》](201710/20171017_01.md)    
 8、[《为什么数据库选型和找对象一样重要》](202003/20200322_01.md)    
 9、[《云、商业、开源数据库终局之战 - 商业角度解读PG如何破局 - openapi 、 扩展能力、插件开源协议》](202007/20200727_04.md)    
+10、[《《引爆点》原理, 如何影响PG发展》](197001/20200804_01.md)      
   
 PG官方微信 | PG技术进阶钉钉群</br>每周直播 | digoal </br>个人微信  
 ---|---|---  
@@ -74,6 +75,26 @@ digoal's|PostgreSQL|文章|归类
   
 ### 所有文档如下  
 ----  
+##### 202009/20200904_01.md   [《PostgreSQL 硬通胀产品(茅台、藏品等) 打假、防伪、溯源 区块链应用 结构设计和demo》](202009/20200904_01.md)  
+##### 202009/20200903_02.md   [《PostgreSQL 直播预告》](202009/20200903_02.md)  
+##### 202009/20200903_01.md   [《PostgreSQL 流量在哪? 如何植入?》](202009/20200903_01.md)  
+##### 202009/20200902_01.md   [《PostgreSQL PaaS 业务场景 突出问题 与 优化 - 从卖软件license 到 卖订阅服务 的 转变趋势》](202009/20200902_01.md)  
+----  
+##### 202008/20200831_01.md   [《如何快速、轻松的将 PostgreSQL 迁移到 阿里云 RDS PostgreSQL》](202008/20200831_01.md)  
+##### 202008/20200828_01.md   [《PostgreSQL 社区建设商业策划 {未完}》](202008/20200828_01.md)  
+##### 202008/20200826_02.md   [《PostgreSQL 大版本迁移, 业务兼容性评估》](202008/20200826_02.md)  
+##### 202008/20200826_01.md   [《PostgreSQL SQL时快时慢, 怎么排查?》](202008/20200826_01.md)  
+##### 202008/20200824_01.md   [《PostgreSQL 喜马拉雅 音频节目开播》](202008/20200824_01.md)  
+##### 202008/20200821_01.md   [《PostgreSQL 许愿墙来了, 永久开放, 快来许愿》](202008/20200821_01.md)  
+##### 202008/20200817_01.md   [《PostgreSQL 20200819当天代码 - 14 对比 13 高并发性能优化 数据对比 - get snapshot improve》](202008/20200817_01.md)  
+##### 202008/20200814_05.md   [《PostgreSQL sslutils插件 - 通过SQL接口管理ssl key,crt,crl》](202008/20200814_05.md)  
+##### 202008/20200814_04.md   [《PostgreSQL catalog (元数据) corruption 问题检测》](202008/20200814_04.md)  
+##### 202008/20200814_03.md   [《通过file_fdw读取 Linux proc文件系统, 解析系统状态, 实现PostgreSQL 操作系统监控 - cpu,memory,network,filesystem,block dev等监控》](202008/20200814_03.md)  
+##### 202008/20200814_02.md   [《PostgreSQL plpgsql 函数 trace - plpgsql_check》](202008/20200814_02.md)  
+##### 202008/20200814_01.md   [《交互式学习 PostgreSQL - 纯PG小白的进阶指南》](202008/20200814_01.md)  
+##### 202008/20200812_02.md   [《PostgreSQL 时间间隔如何转化为数值 - interval to numeirc OR (timestamp to numeric then mins)》](202008/20200812_02.md)  
+##### 202008/20200812_01.md   [《PostgreSQL 14 GetSnapshotData 高并发优化, 以及 64位xid避免xid wrap优化》](202008/20200812_01.md)  
+##### 202008/20200807_01.md   [《PostgreSQL lsm3 index access method》](202008/20200807_01.md)  
 ##### 202008/20200803_11.md   [《PostgreSQL 14 扩展逻辑decoding API 应对长事务逻辑复制优化 - Extend the logical decoding output plugin API with stream methods.》](202008/20200803_11.md)  
 ##### 202008/20200803_10.md   [《PostgreSQL 13 & 14 对齐hashagg和hash join的explain analyze输出内容》](202008/20200803_10.md)  
 ##### 202008/20200803_09.md   [《PostgreSQL 14 仅保留fast promtoe》](202008/20200803_09.md)  
@@ -101,7 +122,7 @@ digoal's|PostgreSQL|文章|归类
 ##### 202007/20200716_01.md   [《PostgreSQL plpgsql debug - 黑屏|text|文本 模式调试存储过程》](202007/20200716_01.md)  
 ##### 202007/20200710_02.md   [《PostgreSQL x分组, y排序, 每组各取(N动态)条 - 子查询+子查询聚合使用》](202007/20200710_02.md)  
 ##### 202007/20200710_01.md   [《PostgreSQL 优化case - where A字段范围 order by B字段排序 limit x》](202007/20200710_01.md)  
-##### 202007/20200709_02.md   [《PostgreSQL 操作系统监控插件 - system_stats》](202007/20200709_02.md)  
+##### 202007/20200709_02.md   [《PostgreSQL 操作系统监控插件 - system_stats - cpu,memory,network,filesystem,block dev等监控》](202007/20200709_02.md)  
 ##### 202007/20200709_01.md   [《vacuum的backend xmin不会导致其他vacuum无法回收新的垃圾版本.》](202007/20200709_01.md)  
 ##### 202007/20200702_01.md   [《PostgreSQL zedstore 行 列 混合存储使用》](202007/20200702_01.md)  
 ----  
@@ -429,7 +450,7 @@ digoal's|PostgreSQL|文章|归类
 ##### 201908/20190821_01.md   [《PostgreSQL 克隆schema - clone schema》](201908/20190821_01.md)  
 ##### 201908/20190819_02.md   [《PostGIS 3 瓦片提取函数 ST_TileEnvelope》](201908/20190819_02.md)  
 ##### 201908/20190819_01.md   [《PostgreSQL 窗口函数内部distinct的支持与用法 - count(distinct x) over (partition by ...)》](201908/20190819_01.md)  
-##### 201908/20190817_03.md   [《Anonymization & Data Masking for PostgreSQL - 自动脱敏控制 - oracle data vault》](201908/20190817_03.md)  
+##### 201908/20190817_03.md   [《Anonymization & Data Masking for PostgreSQL - 自动脱敏控制 - oracle data vault - postgresql-anonymizer》](201908/20190817_03.md)  
 ##### 201908/20190817_02.md   [《PostgreSQL 跟踪记录是谁写入的，谁更新的》](201908/20190817_02.md)  
 ##### 201908/20190817_01.md   [《PostgreSQL 跟踪记录被更新了多少次》](201908/20190817_01.md)  
 ##### 201908/20190816_02.md   [《PostgreSQL 跟踪记录（row,tuple）的插入、更新时间 - spi,moddatetime trigger》](201908/20190816_02.md)  
@@ -718,7 +739,7 @@ digoal's|PostgreSQL|文章|归类
 ##### 201810/20181015_01.md   [《PostgreSQL 多维空间几何对象 相交、包含 高效率检索实践 - cube》](201810/20181015_01.md)  
 ##### 201810/20181011_01.md   [《PostgreSQL 相似人群圈选，人群扩选，向量相似 使用实践 - cube》](201810/20181011_01.md)  
 ##### 201810/20181009_01.md   [《PostgreSQL 随机记录返回 - 300倍提速实践 (随机数组下标代替order by random())》](201810/20181009_01.md)  
-##### 201810/20181008_01.md   [《PostgreSQL sql文件编码引起的数据导入乱码或查询字符集异常报错(invalid byte sequence)》](201810/20181008_01.md)  
+##### 201810/20181008_01.md   [《PostgreSQL sql文件编码引起的数据导入乱码或查询字符集异常报错(invalid byte sequence)  - 字符集转换》](201810/20181008_01.md)  
 ##### 201810/20181005_01.md   [《关于ECS 无法使用VIP的问题 - SDN , openflow》](201810/20181005_01.md)  
 ##### 201810/20181004_03.md   [《PostgreSQL JOIN limit 优化器 成本计算 改进 - mergejoin startup cost 优化》](201810/20181004_03.md)  
 ##### 201810/20181004_01.md   [《PostgreSQL Mastering book 序》](201810/20181004_01.md)  
@@ -2686,6 +2707,9 @@ digoal's|PostgreSQL|文章|归类
 ##### 197002/20200406_02.md   [《父与子 - 齐家治国平天下, 怎么做到齐家?》](197002/20200406_02.md)  
 ##### 197002/20200222_01.md   [《父与子 - 初中生魔鬼提高计划》](197002/20200222_01.md)  
 ----  
+##### 197001/20200819_01.md   [《PostgreSQL 数据库行业峰会设计》](197001/20200819_01.md)  
+##### 197001/20200818_01.md   [《规划》](197001/20200818_01.md)  
+##### 197001/20200804_01.md   [《《引爆点》原理, 如何影响PG发展》](197001/20200804_01.md)  
 ##### 197001/20200730_01.md   [《高校竞赛活动》](197001/20200730_01.md)  
 ##### 197001/20200710_03.md   [《赞助权益》](197001/20200710_03.md)  
 ##### 197001/20200523_02.md   [《小众、弱势产品起步营销法则》](197001/20200523_02.md)  

@@ -60,6 +60,7 @@ echo "6、[《[未完待续] PostgreSQL\Greenplum Customer 社区管理 TODO》]
 echo "7、[《[未完待续] PostgreSQL\Greenplum Customer视角TODO》](201710/20171017_01.md)    " >> ./README.md
 echo "8、[《为什么数据库选型和找对象一样重要》](202003/20200322_01.md)    " >> ./README.md
 echo "9、[《云、商业、开源数据库终局之战 - 商业角度解读PG如何破局 - openapi 、 扩展能力、插件开源协议》](202007/20200727_04.md)    " >> ./README.md
+echo "10、[《《引爆点》原理, 如何影响PG发展》](197001/20200804_01.md)      " >> ./README.md
 echo "  "  >> ./README.md
 echo "PG官方微信 | PG技术进阶钉钉群</br>每周直播 | digoal </br>个人微信  " >> ./README.md
 echo "---|---|---  " >> ./README.md
@@ -87,40 +88,67 @@ do
   echo "----  " >> ../README.md
   for file in `ls -lr *.md|awk '{print $9}'|grep -E '^[0-9]{8}'` 
   do 
-    title=`head -n 1 $file|awk -F "##" '{print $2}'|sed 's/^[ ]*//; s/[ ]*$//'`
+    title=`head -n 1 ${file}|awk -F "##" '{print $2}'|sed 's/^[ ]*//; s/[ ]*$//'`
     echo "##### ${file}   [《${title}》](${file})  " >> ./readme.md
     echo "##### ${dir}/${file}   [《${title}》](${dir}/${file})  " >> ../README.md
 # ######################  go go go
+# macos 例子 sed -i "" '/57258f76c37864c6e6d23383d05714ea/d' ${file}
+# linux 例子 sed -i '/57258f76c37864c6e6d23383d05714ea/d' ${file}
+# ###XYQ###
+#sed -i "" '/269ac3d1c492e938c0191101c7238216/d' ${file}
+# ###FREEURL###   
+#sed -i "" '/57258f76c37864c6e6d23383d05714ea/d' ${file}
+# ###ALIPGURL###   
+#sed -i "" '/40cff096e9ed7122c512b35d8561d9c8/d' ${file}
+# ###LINK###   
+#sed -i "" '/22709685feb7cab07d30f30387f0a9ae/d' ${file}
+# ###WXLINK###   
+#sed -i "" '/f7ad92eeba24523fd47a6e1a0e691b59/d' ${file}
+## 
+    XYQ=`grep "269ac3d1c492e938c0191101c7238216" ${file}|grep -c "269ac3d1c492e938c0191101c7238216"`
+    if [ $XYQ -lt 1 ]; then
+      echo "  " >> ./${file}
+      echo "#### [PostgreSQL 许愿链接](https://github.com/digoal/blog/issues/76 \"269ac3d1c492e938c0191101c7238216\")" >> ./${file}
+      echo "您的愿望将传达给PG kernel hacker、数据库厂商等, 帮助提高数据库产品质量和功能, 说不定下一个PG版本就有您提出的功能点. 针对非常好的提议，奖励限量版PG文化衫、纪念品、贴纸、PG热门书籍等，奖品丰富，快来许愿。[开不开森](https://github.com/digoal/blog/issues/76 \"269ac3d1c492e938c0191101c7238216\").  " >> ./${file}
+      echo "  " >> ./${file}
+    fi
+##
     FREEURL=`grep "57258f76c37864c6e6d23383d05714ea" ${file}|grep -c "57258f76c37864c6e6d23383d05714ea"`
     if [ $FREEURL -ne 1 ]; then
       echo "  " >> ./${file}
-      echo "#### [免费领取阿里云RDS PostgreSQL实例、ECS虚拟机](https://www.aliyun.com/database/postgresqlactivity \"57258f76c37864c6e6d23383d05714ea\")" >> ./${file}
+      echo "#### [9.9元购买3个月阿里云RDS PostgreSQL实例](https://www.aliyun.com/database/postgresqlactivity \"57258f76c37864c6e6d23383d05714ea\")" >> ./${file}
       echo "  " >> ./${file}
     fi
-# ######   sed -i '/57258f76c37864c6e6d23383d05714ea/d' $file
+##
+    ALIPGURL=`grep "40cff096e9ed7122c512b35d8561d9c8" ${file}|grep -c "40cff096e9ed7122c512b35d8561d9c8"`
+    if [ $ALIPGURL -ne 1 ]; then
+      echo "  " >> ./${file}
+      echo "#### [PostgreSQL 解决方案集合](https://yq.aliyun.com/topic/118 \"40cff096e9ed7122c512b35d8561d9c8\")" >> ./${file}
+      echo "  " >> ./${file}
+    fi
+## 
     LINK=`grep "22709685feb7cab07d30f30387f0a9ae" $file|grep -c "22709685feb7cab07d30f30387f0a9ae"`
     if [ $LINK -ne 1 ]; then
       echo "  " >> ./$file
-      echo "#### [digoal's PostgreSQL文章入口](https://github.com/digoal/blog/blob/master/README.md \"22709685feb7cab07d30f30387f0a9ae\")" >> ./$file
+      echo "#### [德哥 / digoal's github - 公益是一辈子的事.](https://github.com/digoal/blog/blob/master/README.md \"22709685feb7cab07d30f30387f0a9ae\")" >> ./$file
       echo "  " >> ./$file
     fi
-# ######   sed -i '/22709685feb7cab07d30f30387f0a9ae/d' $file
+## 
     WXLINK=`grep "f7ad92eeba24523fd47a6e1a0e691b59" $file|grep -c "f7ad92eeba24523fd47a6e1a0e691b59"`
     if [ $WXLINK -ne 1 ]; then
       echo "  " >> ./$file
-      echo "![digoal's weixin](../pic/digoal_weixin.jpg \"f7ad92eeba24523fd47a6e1a0e691b59\")" >> ./$file
+      echo "![digoal's wechat](../pic/digoal_weixin.jpg \"f7ad92eeba24523fd47a6e1a0e691b59\")" >> ./$file
       echo "  " >> ./$file
     fi
-# ######   sed -i '/f7ad92eeba24523fd47a6e1a0e691b59/d' $file
-#
-#    DSLINK=`grep "acd5cce1a143ef1d6931b1956457bc9f" $file|grep -c "acd5cce1a143ef1d6931b1956457bc9f"`
+##
+#    DSLINK=`grep "acd5cce1a143ef1d6931b1956457bc9f" ${file}|grep -c "acd5cce1a143ef1d6931b1956457bc9f"`
 #    if [ $DSLINK -ne 1 ]; then
-#      echo "  " >> ./$file
+#      echo "  " >> ./${file}
 #      echo "#### 打赏都逃不过老婆的五指山 －_－b  " >> ./$file
 #      echo "![wife's weixin ds](../pic/wife_weixin_ds.jpg \"acd5cce1a143ef1d6931b1956457bc9f\")" >> ./$file
 #      echo "  " >> ./$file
 #    fi
-# ######  sed -i '/打赏都逃不过老婆的五指山/d' $file
+# ######  sed -i '/打赏都逃不过老婆的五指山/d' ${file}
 # ######  sed -i '/acd5cce1a143ef1d6931b1956457bc9f/d' $file
 #
 #    FLAG=`grep "flagcounter" $file|grep -c "href"`
