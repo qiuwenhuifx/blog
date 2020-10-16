@@ -2,6 +2,15 @@
   
 ### 文章列表  
 ----  
+##### 20200930_01.md   [《PostgreSQL 在资源搜索中的设计 - pase, smlar, pg_trgm - 标签+权重相似排序 - 标签的命中率排序》](20200930_01.md)  
+##### 20200929_01.md   [《PostgreSQL 语法或将成为未来企业数据库市场唯一 SQL语法》](20200929_01.md)  
+##### 20200928_03.md   [《多个引擎一份存储 - cockroachDB , sequoiaDB》](20200928_03.md)  
+##### 20200928_02.md   [《PostgreSQL json 矩阵数据搜索优化 - partial index , recheck》](20200928_02.md)  
+##### 20200928_01.md   [《PostgreSQL select x from tbl where c1 in () order by c2; 优化 - merge sort , top-N heapsort , quick sort》](20200928_01.md)  
+##### 20200926_03.md   [《[直播]大话数据库终局之战》](20200926_03.md)  
+##### 20200926_02.md   [《[直播]为什么打车和宇宙大爆炸有关?》](20200926_02.md)  
+##### 20200926_01.md   [《PostgreSQL 13 正式发布, 大颗粒特性解读 (2020-09-24)》](20200926_01.md)  
+##### 20200924_01.md   [《postgresweekly, dbweekly 各种weekly在哪》](20200924_01.md)  
 ##### 20200923_01.md   [《常用centos 扩展包 - epel , centos-release-scl》](20200923_01.md)  
 ##### 20200921_01.md   [《数据库发展历程 图》](20200921_01.md)  
 ##### 20200920_04.md   [《PostgreSQL pro - pg_stat_statements 扩展插件 pgpro_stats - 等待事件统计、采样配置、自动化监控metric配置等》](20200920_04.md)  
