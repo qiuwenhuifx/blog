@@ -56,7 +56,7 @@
   
 PG官方微信 | PG技术进阶钉钉群</br>每周直播 | digoal </br>个人微信  
 ---|---|---  
-![pic](./pic/pg_weixin.jpg) | ![pic](./pic/dingding_pg_chat.jpg) | ![pic](./pic/digoal_weixin.jpg)  
+[pic](./pic/pg_weixin.jpg) | [pic](./pic/dingding_pg_chat.jpg) | [image.png](https://ucc.alicdn.com/pic/developer-ecology/24ff1d42e2cf4f3a8ae166a243f58cb3.png)  
   
 如发现错误, 请万望指正, 非常感谢.  
   
@@ -78,8 +78,23 @@ digoal's|PostgreSQL|文章|归类
   
 ### 所有文档如下  
 ----  
+##### 202011/20201128_04.md   [《PostgreSQL bloom 索引原理》](202011/20201128_04.md)  
+##### 202011/20201128_03.md   [《PostgreSQL 13 preview - index - Opclass parameters》](202011/20201128_03.md)  
+##### 202011/20201128_02.md   [《PostgreSQL RUM 索引原理》](202011/20201128_02.md)  
+##### 202011/20201128_01.md   [《PostgreSQL SP-GiST 索引原理》](202011/20201128_01.md)  
+##### 202011/20201127_05.md   [《创建完slot, 是否立即就开始保留wal?》](202011/20201127_05.md)  
+##### 202011/20201127_04.md   [《什么角色最适合担任社区主席》](202011/20201127_04.md)  
+##### 202011/20201127_03.md   [《半小时快速搭建PostgreSQL简易监控》](202011/20201127_03.md)  
+##### 202011/20201127_02.md   [《正确的配置和使用 Debezium CDC 捕获、同步 PG 逻辑增量数据》](202011/20201127_02.md)  
+##### 202011/20201127_01.md   [《PostgreSQL 14 preview - pg_stat_statements: Track number of times pgss entries were deallocated. - 跟踪是否需要调大 pg_stat_statements.max》](202011/20201127_01.md)  
+##### 202011/20201126_01.md   [《PostgreSQL 14 preview - Add support for abstract Unix-domain sockets》](202011/20201126_01.md)  
+##### 202011/20201125_01.md   [《PostgreSQL 递归查询在分组合并中的用法》](202011/20201125_01.md)  
+##### 202011/20201124_01.md   [《PostgreSQL jdbc prepared statement 问号?占位符 如何转义》](202011/20201124_01.md)  
+##### 202011/20201123_01.md   [《用golang选什么pg驱动? pgx is a pure Go driver and toolkit for PostgreSQL.》](202011/20201123_01.md)  
+##### 202011/20201122_01.md   [《PostgreSQL 中国 数据库内核研发 环境、人才现状与刺激方法》](202011/20201122_01.md)  
+##### 202011/20201120_01.md   [《PostgreSQL - where x=round(random()*xx) 返回结果反常 - 背后的函数稳定性逻辑 (immutable stable volatile)》](202011/20201120_01.md)  
 ##### 202011/20201117_03.md   [《gdb - debug - core dump - How to Analyze a PostgreSQL Crash Dump File》](202011/20201117_03.md)  
-##### 202011/20201117_02.md   [《DEALING WITH STREAMING REPLICATION CONFLICTS IN POSTGRESQL》](202011/20201117_02.md)  
+##### 202011/20201117_02.md   [《PostgreSQL 流复制冲突分类讲解以及对应解决方案 - DEALING WITH STREAMING REPLICATION CONFLICTS IN POSTGRESQL  - 特别是lock confict(vacuum truncate suffix free page引起的）》](202011/20201117_02.md)  
 ##### 202011/20201117_01.md   [《使用Postgres，MobilityDB和Citus大规模(百亿级)实时分析GPS轨迹》](202011/20201117_01.md)  
 ##### 202011/20201116_01.md   [《PostgreSQL sharding 插件 citus 9.5发布 - 特性众多》](202011/20201116_01.md)  
 ##### 202011/20201115_05.md   [《PostgreSQL 等待事件 及 等待采样统计 (pg_wait_sampling) 发布新版本 1.1.2》](202011/20201115_05.md)  
@@ -348,7 +363,7 @@ digoal's|PostgreSQL|文章|归类
 ##### 202003/20200326_08.md   [《PostgreSQL ghtree实现的海明距离排序索引, 性能不错(模糊图像) - pg-knn_hamming》](202003/20200326_08.md)  
 ##### 202003/20200326_07.md   [《PostgreSQL shell命令插件 - pg_remote_exec》](202003/20200326_07.md)  
 ##### 202003/20200326_06.md   [《PostgreSQL 化学插件 - pgchem_tigress molecules rdkit》](202003/20200326_06.md)  
-##### 202003/20200326_05.md   [《PostgreSQL 全局临时表插件 - global temp table》](202003/20200326_05.md)  
+##### 202003/20200326_05.md   [《PostgreSQL 全局临时表插件 - pgtt - global temp table》](202003/20200326_05.md)  
 ##### 202003/20200326_04.md   [《PostgreSQL ctid scan 扫描方法插件 - 限定访问blocks》](202003/20200326_04.md)  
 ##### 202003/20200326_03.md   [《PostgreSQL 一款logical decoder - pg-deltaflood》](202003/20200326_03.md)  
 ##### 202003/20200326_02.md   [《PostgreSQL VagueGeometry vague spatial data - VASA (Vague Spatial Algebra) for PG - 模糊空间数据》](202003/20200326_02.md)  
