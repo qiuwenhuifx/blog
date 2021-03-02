@@ -20,13 +20,15 @@ echo "- PostgreSQL 9.1 数据库管理与开发 1天  " >> ./README.md
 echo "- PostgreSQL 9.3 数据库优化 3天  " >> ./README.md
 echo "- PostgreSQL 专题讲座  " >> ./README.md
 echo "  "  >> ./README.md
-echo "2、[《2020-PostgreSQL+MySQL 联合解决方案课程 - 汇总视频、课件》](202001/20200118_02.md)  " >> ./README.md
-echo "3、[《2019-PostgreSQL 2天体系化培训 - 视频每周更新》](201901/20190105_01.md)  " >> ./README.md 
-echo "4、[《2017-PostgreSQL 应用场景实践 - 含视频》](201805/20180524_02.md)  " >> ./README.md 
-echo "5、[《2019-PG天天象上沙龙纪录- 含视频》](201801/20180121_01.md)  " >> ./README.md 
-echo "6、[《2019-Oracle迁移到PostgreSQL - 实战培训》](201906/20190615_03.md)    " >> ./README.md 
-echo "7、[《2018-PG生态、案例、开发实践系列 - 培训视频》](https://edu.aliyun.com/course/836/lesson/list)  "  >> ./README.md
-echo "8、[《2018-阿里云POLARDB for Oracle|RDS for PPAS 讲解视频》](https://yq.aliyun.com/live/582)  "  >> ./README.md   
+echo "2、[《2020-PostgreSQL 15大应用场景实践 - 直播回放》](202009/20200903_02.md)  " >> ./README.md
+echo "3、[《2020-PostgreSQL+MySQL 联合解决方案课程 - 汇总视频、课件》](202001/20200118_02.md)  " >> ./README.md
+echo "4、[《2019-PostgreSQL 2天体系化培训 - 视频每周更新》](201901/20190105_01.md)  " >> ./README.md 
+echo "5、[《2017-PostgreSQL 应用场景实践 - 含视频》](201805/20180524_02.md)  " >> ./README.md 
+echo "6、[《2019-PG天天象上沙龙纪录- 含视频》](201801/20180121_01.md)  " >> ./README.md 
+echo "7、[《2019-Oracle迁移到PostgreSQL - 实战培训》](201906/20190615_03.md)    " >> ./README.md 
+echo "8、[《2018-PG生态、案例、开发实践系列 - 培训视频》](https://edu.aliyun.com/course/836/lesson/list)  "  >> ./README.md
+echo "9、[《2018-阿里云POLARDB for Oracle|RDS for PPAS 讲解视频》](https://yq.aliyun.com/live/582)  "  >> ./README.md   
+echo "10、[《PostgreSQL 15 大 惊奇应用场景实践 - 视频回放》](202009/20200903_02.md)    " >> ./README.md
 echo "  "  >> ./README.md
 echo "### 二、学习资料  " >> ./README.md
 echo "  "  >> ./README.md
@@ -58,16 +60,18 @@ echo "3、[《企业为什么纷纷选择阿里云AliPG》](202005/20200523_01.m
 echo "4、[《为什么企业应该参与PG社区建设?》](202003/20200321_01.md)    " >> ./README.md
 echo "5、[《PostgreSQL 社区建设思考》](202004/20200426_01.md)    " >> ./README.md
 echo "5\.1、[《PostgreSQL 社区建设商业策划 {未完}》](202008/20200828_01.md)      " >> ./README.md
-echo "6、[《[未完待续] PostgreSQL\Greenplum Customer 社区管理 TODO》](201710/20171017_05.md)    " >> ./README.md
+echo "6、[《[未完待续] PostgreSQL\Greenplum 社区管理 TODO》](201710/20171017_05.md)    " >> ./README.md
 echo "7、[《[未完待续] PostgreSQL\Greenplum Customer视角TODO》](201710/20171017_01.md)    " >> ./README.md
 echo "8、[《为什么数据库选型和找对象一样重要》](202003/20200322_01.md)    " >> ./README.md
 echo "9、[《云、商业、开源数据库终局之战 - 商业角度解读PG如何破局 - openapi 、 扩展能力、插件开源协议》](202007/20200727_04.md)    " >> ./README.md
 echo "9\.1、[《[直播]大话数据库终局之战》](202009/20200926_03.md)      " >> ./README.md
 echo "10、[《《引爆点》原理, 如何影响PG发展》](197001/20200804_01.md)      " >> ./README.md
+echo "11、[《开源数据库全球化协作浪潮 思考 - 24问》](202101/20210120_02.md)       " >> ./README.md
+echo "12、[《企业CxO数据库选型应该回答清楚的 15 个问题》](202101/20210117_04.md)         " >> ./README.md
 echo "  "  >> ./README.md
 echo "PG官方微信 | PG技术进阶钉钉群</br>每周直播 | digoal </br>个人微信  " >> ./README.md
 echo "---|---|---  " >> ./README.md
-echo "[pic](./pic/pg_weixin.jpg) | [pic](./pic/dingding_pg_chat.jpg) | [image.png](https://ucc.alicdn.com/pic/developer-ecology/24ff1d42e2cf4f3a8ae166a243f58cb3.png)  " >> ./README.md
+echo "[pic](./pic/pg_weixin.jpg) | [pic](./pic/dingding_pg_chat.png) | [image.png](https://ucc.alicdn.com/pic/developer-ecology/24ff1d42e2cf4f3a8ae166a243f58cb3.png)  " >> ./README.md
 echo "  "  >> ./README.md
 #echo "PG社区认证 | PG社区认证</br>联系人微信 " >> ./README.md
 #echo "---|---  " >> ./README.md
